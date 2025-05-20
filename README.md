@@ -1,3 +1,7 @@
+<div align="center">
+Made with ❤️ by Nurul Aisyah
+</div>
+
 # Praktikum ke 1 - 3
 
 <p align='center'>
@@ -6,11 +10,13 @@
 </p>
 
 ## Profil
-|  |  |
-| -------- | --- |
-| **Nama** | Nurul Aisyah |
-| **Kelas** | TI.23.A.5 |
-| **Mata Kuliah** | Pemrograman Web 2 |
+| Variable           | Isi                       |
+| ------------------ | ------------------------- |
+| **Nama**           | Nurul Aisyah     |
+| **NIM**            | 312310476                 |
+| **Kelas**          | TI.23.A.5                 |
+| **Mata Kuliah**    | Pemrograman Web 2         |
+| **Dosen Pengampu** |Agung Nugroho, S.Kom., M.Kom. |
 
 # Praktikum 1: PHP Framework (Codeigniter)
 
