@@ -8,7 +8,7 @@
 ## Profil
 |  |  |
 | -------- | --- |
-| **Nama** | Muhammad Nurul Firdaus |
+| **Nama** | Nurul Aisyah |
 | **Kelas** | TI.23.A.5 |
 | **Mata Kuliah** | Pemrograman Web 2 |
 
