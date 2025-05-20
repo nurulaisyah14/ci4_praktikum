@@ -16,15 +16,19 @@
 
 ## Langkah-langkah Praktikum
 ## Persiapan
-Sebelum memulai menggunakan Framework Codeigniter, perlu dilakukan konfigurasi pada webserver. Beberapa ekstensi PHP perlu diaktifkan untuk kebutuhan pengembangan Codeigniter 4.
-Berikut beberapa ekstensi yang perlu diaktifkan:
-* php-json ekstension untuk bekerja dengan JSON;
-* php-mysqlnd native driver untuk MySQL;
-* php-xml ekstension untuk bekerja dengan XML;
-* php-intl ekstensi untuk membuat aplikasi multibahasa;
-* libcurl (opsional), jika ingin pakai Curl.
-
-Untuk mengetahui ekstensi tersebut telah aktif atau belum, kita bisa mengetahui nya melalui powershell atau command prompt dengan cara:
+Sebelum menggunakan framework **CodeIgniter 4**, pastikan Anda sudah melakukan konfigurasi awal pada web server dan mengaktifkan beberapa ekstensi PHP yang dibutuhkan.
+Berikut ini adalah daftar ekstensi PHP yang harus diaktifkan agar CodeIgniter 4 dapat berjalan dengan baik:
+- **php-json**  
+  Digunakan untuk menangani data dalam format JSON.
+- **php-mysqlnd**  
+  Native driver untuk koneksi ke database MySQL.
+- **php-xml**  
+  Diperlukan untuk memproses data XML.
+- **php-intl**  
+  Mendukung fitur multibahasa (internasionalisasi).
+- **libcurl** *(Opsional)*  
+  Digunakan jika Anda ingin mengakses API menggunakan Curl.
+Untuk mengecek apakah ekstensi PHP yang dibutuhkan sudah aktif, Anda bisa menggunakan terminal PowerShell atau Command Prompt, lalu jalankan perintah berikut:
 
 ### Catatan : mulai dari PHP 7.0, ekstensi JSON biasanya sudah termasuk secara bawaan.
 ![alt text](img/ekstensi.png)
