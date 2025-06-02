@@ -37,14 +37,18 @@ Berikut ini adalah daftar ekstensi PHP yang harus diaktifkan agar CodeIgniter 4 
 Untuk mengecek apakah ekstensi PHP yang dibutuhkan sudah aktif, Anda bisa menggunakan terminal PowerShell atau Command Prompt, lalu jalankan perintah berikut:
 
 ### Catatan : mulai dari PHP 7.0, ekstensi JSON biasanya sudah termasuk secara bawaan.
-![alt text](img/ekstensi.png)
+![alt text]![image](https://github.com/user-attachments/assets/89c1077b-3e15-4461-9605-0c3ea98cca70)
+
 
 Lalu kalian bisa mencari ekstensi yang kalian butuhkan, jika ada yang belum diaktivasi kalian dapat mengaktifkan ekstensi tersebut, melalu XAMPP Control Panel, pada bagian Apache
 klik Config -> PHP.ini :
 
-![alt text](img/ekstensi2.png)
+![alt text]![image]![image](https://github.com/user-attachments/assets/e78e6aaf-196e-42f3-b121-13d07a4f08b9)
 
-![alt text](img/intl.png)
+
+
+![alt text]![image](https://github.com/user-attachments/assets/a46432ae-47af-4fdd-8e73-5be6d8103447)
+
 * Contohnya disini extension=intl belum aktif, maka cara mengaktivasinya adalah dengan menghilangkan tanda ; (titik koma) pada ekstensi yang akan diaktifkan. Kemudian simpan kembali filenya dan restart Apache web server.
 
 ## Instalasi Codeigniter 4
@@ -55,41 +59,49 @@ dan menggunakan composer. Pada praktikum ini kita menggunakan cara manual.
 * Ubah nama direktory codeigniter4-framework-v4.x.xx menjadi ci4.
 * Buka browser dengan alamat http://localhost/lab11_ci/ci4/public/
 
-![alt text](img/localhost1.png)
+![image](https://github.com/user-attachments/assets/6d29e4f4-8700-4289-9392-5afbae2ea792)
+
+
 
 ## Menjalankan CLI (Command Line Interface)
 Codeigniter 4 menyediakan CLI untuk mempermudah proses development. Untuk mengakses CLI buka Shell pada XAMPP.
 
-![alt text](img/Shell.png)
+![alt text]![image](https://github.com/user-attachments/assets/1b4f3a3e-68fc-4cbc-80cd-d86441579f9c)
+
 
 Arahkan lokasi direktori sesuai dengan direktori kerja project dibuat (Contoh : cd htdocs/lab11_ci/ci4)
 
 Perintah yang dapat dijalankan untuk memanggil CLI Codeigniter adalah:
 
 ### php spark
-![alt text](img/spark.png)
+![alt text]![image](https://github.com/user-attachments/assets/2e5ec267-f278-483a-9eea-1581c1d459fe)
+
 
 ## Mengaktifkan Mode Debugging
 Codeigniter 4 menyediakan fitur debugging untuk memudahkan developer untuk mengetahui pesan error apabila terjadi kesalahan dalam membuat kode program.
 
 Secara default fitur ini belum aktif. Ketika terjadi error pada aplikasi akan ditampilkan pesan kesalahan seperti berikut.
 
-![alt text](img/Whoops.png)
+![alt text]![image](https://github.com/user-attachments/assets/82add2aa-201b-44d6-822b-eeb55a3b275d)
+
 
 Semua jenis error akan ditampilkan sama. Untuk memudahkan mengetahui jenis errornya,
 maka perlu diaktifkan mode debugging dengan mengubah nilai konfigurasi pada environment
 variable CI_ENVIRONMENT menjadi development.
-![alt text](img/development.png)
+![alt text]![image](https://github.com/user-attachments/assets/6961f31f-a9eb-4508-b095-d999de7205ba)
+
 
 Ubah nama file env menjadi .env kemudian buka file tersebut dan ubah nilai variable
 CI_ENVIRONMENT menjadi development.
 #### Catatan : Kadang, CodeIgniter tidak membaca file .env karena masih dikomentari, pastikan tidak ada tanda # di depan CI_ENVIRONMENT.
 
-![alt text](img/error.png)
+![alt text]![image](https://github.com/user-attachments/assets/701103e6-a2af-4720-9552-117682b5aec6)
+
 
 Contoh error yang terjadi. Untuk mencoba error tersebut, ubah kode pada file
 app/Controller/Home.php hilangkan titik koma pada akhir kode return view('welcome_message').
-![alt text](img/coba.png)
+![alt text]![image](https://github.com/user-attachments/assets/588e1006-0666-4da8-b047-0b03db647221)
+
 
 ## Memahami konsep MVC
 Codeigniter menggunakan konsep MVC. MVC meripakan singkatan dari Model-View-
@@ -112,7 +124,8 @@ Pada Codeigniter, request yang diterima oleh file index.php akan diarahkan ke Ro
 meudian oleh router tesebut diarahkan ke Controller.
 
 Router terletak pada file app/config/Routes.php
-![alt text](img/Routes.png)
+![alt text]![image](https://github.com/user-attachments/assets/194fa33d-d703-4509-ac3d-6646f7308ae4)
+
 
 Pada file tersebut kita dapat mendefinisikan route untuk aplikasi yang kita buat.
 Contoh:
@@ -131,10 +144,12 @@ $routes->get('/faqs', 'Page::faqs');
 Untuk mengetahui route yang ditambahkan sudah benar, buka CLI dan jalankan perintah berikut.
 
 php spark routes
-![alt text](<img/spark routes.png>)
+![alt text](![image](https://github.com/user-attachments/assets/d82a1c21-e52d-4379-92d4-c97a2cfeb66a)
+
 
 Selanjutnya coba akses route yang telah dibuat dengan mengakses alamat url http://localhost:8080/about
-![alt text](img/404.png)
+![alt text]![image](https://github.com/user-attachments/assets/3c7db623-fccc-4804-8b98-fce56c2246ae)
+
 
 Ketika diakses akan mucul tampilan error 404 file not found, itu artinya file/page tersebut tidak ada. Untuk dapat mengakses halaman tersebut, harus dibuat terlebih dahulu Contoller yang sesuai dengan routing yang dibuat yaitu Contoller Page.
 
@@ -163,7 +178,8 @@ class Page extends BaseController
 }
 ````
 
-![alt text](img/about.png)
+![alt text]![image](https://github.com/user-attachments/assets/254e2f31-146a-47b5-80e6-8fba4183e55f)
+
 
 #### Auto Routing
 Secara default fitur autoroute pada Codeiginiter sudah aktif. Untuk mengubah status autoroute dapat mengubah nilai variabelnya. Untuk menonaktifkan ubah nilai true menjadi false.
@@ -182,7 +198,8 @@ public function tos()
 ````
 
 Method ini belum ada pada routing, sehingga cara mengaksesnya dengan menggunakan alamat: http://localhost:8080/page/tos
-![alt text](img/tos.png)
+![alt text]![image](https://github.com/user-attachments/assets/a6db901b-01be-4d2c-ab64-5e7d0dc1fec1)
+
 
 ### Membuat View
 Selanjutnya adalam membuat view untuk tampilan web agar lebih menarik. Buat file baru dengan nama about.php pada direktori Views (app/Views/about.php) kemudian isi kodenya seperti berikut.
@@ -217,14 +234,16 @@ Ubah method about pada class Controller Page menjadi seperti berikut:
 
 Kemudian lakukan refresh pada halaman tersebut.
 
-![alt text](img/About2.png)
+![alt text]![image](https://github.com/user-attachments/assets/70da3e03-0fda-4318-a9a1-b4649438f2ac)
+
 
 ### Membuat Layout Web dengan CSS
 Pada dasarnya layout web dengan css dapat diimplamentasikan dengan mudah pada codeigniter. Yang perlu diketahui adalah, pada Codeigniter 4 file yang menyimpan asset css dan javascript terletak pada direktori public.
 
 Buat file css pada direktori public dengan nama style.css
 
-![alt text](img/style.png)
+![alt text]![image](https://github.com/user-attachments/assets/6c685014-7837-4216-9920-776023db656f)
+
 
 Kemudian buat folder template pada direktori view kemudian buat file header.php dan footer.php
 
@@ -290,7 +309,8 @@ Kemudian ubah file app/Views/about.php seperti berikut.
 ```
 
 Selanjutnya refresh tampilan pada alamat http://localhost:8080/about
-![alt text](img/About3.png)
+![alt text]![image](https://github.com/user-attachments/assets/8eef3376-0d54-4cd2-8617-be91cdfabbd3)
+
 
 # Praktikum 2: Framework Lanjutan (CRUD) - CodeIgniter 4
 
@@ -307,7 +327,8 @@ Selanjutnya refresh tampilan pada alamat http://localhost:8080/about
 ## Langkah-Langkah
 
 ### Membuat Database
-![alt text](img/database.png)
+![alt text]![image](https://github.com/user-attachments/assets/a922cdd5-20a1-47c7-accf-3e6d6c3663de)
+
 ```sql
 CREATE DATABASE lab_ci4;
 ```
@@ -326,7 +347,7 @@ CREATE TABLE artikel (
 ### Konfigurasi Koneksi Database
 - Gunakan file .env dan atur parameter koneksi database sesuai kebutuhan.
 
-![alt text](img/Konfigurasi.png)
+![alt text]![image](https://github.com/user-attachments/assets/006fd53d-f7dc-4fb0-a5a7-0a1ddb6721ca)
 
 ### Membuat Model
 - Selanjutnya adalah membuat Model untuk memproses data Artikel. Buat file baru pada
@@ -388,7 +409,8 @@ dengan nama index.php.
 <?= $this->include('template/footer'); ?>
 ```
 Selanjutnya buka browser kembali, dengan mengakses url http://localhost:8080/artikel
-![alt text](img/view1.png)
+![alt text]![image](https://github.com/user-attachments/assets/29729700-35d7-4c39-ac46-c6d1ad9f5223)
+
 Belum ada data yang diampilkan. Kemudian coba tambahkan beberapa data pada database agar dapat ditampilkan datanya.
 ```sql
 INSERT INTO artikel (judul, isi, slug) VALUE
@@ -396,7 +418,8 @@ INSERT INTO artikel (judul, isi, slug) VALUE
 ('Artikel kedua', 'Tidak seperti anggapan banyak orang, Lorem Ipsum bukanlah teks-teks yang diacak. Ia berakar dari sebuah naskah sastra latin klasik dari era 45 sebelum masehi, hingga bisa dipastikan usianya telah mencapai lebih dari 2000 tahun.', 'artikel-kedua');
 ```
 Refresh kembali browser, sehingga akan ditampilkan hasilnya.
-![alt text](img/view2.png)
+![alt text]![image](https://github.com/user-attachments/assets/8c8fac91-837b-479d-88ec-2df5ca53f160)
+
 ### Membuat Tampilan Detail Artikel
 Tampilan pada saat judul berita di klik maka akan diarahkan ke halaman yang berbeda. Tambahkan fungsi baru pada Controller Artikel dengan nama view().
 ```php
@@ -436,7 +459,8 @@ $artikel['judul']; ?>">
 ```php
 $routes->get('/artikel/(:any)', 'Artikel::view/$1');
 ```
-![alt text](img/Artikel2.png)
+![alt text]![image](https://github.com/user-attachments/assets/70426d4d-d0d3-49a1-854e-e9c2247f0ae1)
+
 ### Membuat Menu Admin
 Menu admin adalah untuk proses CRUD data artikel. Buat method baru pada Controller Artikel dengan nama admin_index().
 ```php
@@ -504,7 +528,9 @@ $routes->group('admin', function($routes) {
 });
 ```
 Akses menu admin dengan url http://localhost:8080/admin/artikel
-![alt text](img/Admin.png)
+![alt text!![image](https://github.com/user-attachments/assets/4100eb3d-c25e-4eb3-8572-151c732aed2d)
+
+
 ### Menambah Data Artikel
 Tambahkan fungsi/method baru pada Controller Artikel dengan nama add().
 ```php
@@ -546,7 +572,9 @@ Kemudian buat view untuk form tambah dengan nama form_add.php
 
 <?= $this->include('template/admin_footer'); ?>
 ```
-![alt text](img/form_add.png)
+![alt text]![image]![image](https://github.com/user-attachments/assets/5813de06-0974-4726-ac93-b5033032aeb7)
+
+
 ### Mengubah Data
 Tambahkan fungsi/method baru pada Controller Artikel dengan nama edit().
 ```php
@@ -591,7 +619,9 @@ Kemudian buat view untuk form tambah dengan nama form_edit.php
 
 <?= $this->include('template/admin_footer'); ?>
 ```
-![alt text](img/form_edit.png)
+![alt text]![image]![image](https://github.com/user-attachments/assets/38ae9f61-388d-486d-b6e7-1ca33273eec1)
+
+
 ### Menghapus Data
 Tambahkan fungsi/method baru pada Controller Artikel dengan nama delete().
 ```php
@@ -698,7 +728,8 @@ class ArtikelTerkini extends Cell
 ```sql
 ALTER TABLE artikel ADD COLUMN created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
 ```
-![alt text](img/1.png)
+![alt text![image](https://github.com/user-attachments/assets/544ed7f5-58dd-433a-aa2c-3ce726b626b9)
+
 ### 2. Selesaikan programnya sesuai Langkah-langkah yang ada. Anda boleh melakukan improvisasi.
 
 ### 3. Apa manfaat utama dari penggunaan View Layout dalam pengembangan aplikasi?
@@ -722,7 +753,8 @@ View Layout memberikan cara untuk membuat struktur tampilan yang konsisten di se
 ```sql
 ALTER TABLE artikel ADD kategori VARCHAR(50);
 ```
-![alt text](img/2.png)
+![alt text]![image](https://github.com/user-attachments/assets/1f17aac2-5d03-44b1-9cc8-18a6623cfc01)
+
 - Tambahkan parameter kategori di method render:
 ```php
 public function render($kategori = null)
@@ -794,5 +826,7 @@ $routes->get('/kategori/(:segment)', 'Artikel::kategori/$1');
 <?= $this->endSection() ?>
 ```
 ### Screenshot Hasil
-![alt text](img/Olahraga.png)
-![alt text](img/Teknologi.png)
+![alt text]![image](https://github.com/user-attachments/assets/56edd7e3-388d-41d9-8377-5b8af8b6edb3)
+
+![alt text]![image](https://github.com/user-attachments/assets/62ffd336-22c4-4596-a51b-e12fe0d2d15a)
+
