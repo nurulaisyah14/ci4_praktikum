@@ -4,10 +4,6 @@ Made with ❤️ by Nurul Aisyah
 
 # Praktikum ke 1 - 3
 
-<p align='center'>
-    <img src=img/php.png width="120px" height="120px">
-    <img src=img/ci.png width="120px" height="120px">
-</p>
 
 ## Profil
 | Variable           | Isi                       |
